@@ -3,41 +3,109 @@ import java.util.Map;
 import java.util.List;
 
 import java.util.ArrayList;
+
+ /**
+ * The class Food
+ */ 
 public class Food {
     private int id;
     private String name;
     private double price;
     private int calories;
     
-    public int getId() {
+
+/** 
+ *
+ * Gets the identifier
+ *
+ * @return the identifier
+ */
+    public int getId() { 
+
         return id;
     }
 
-    public void setId(int id) {
+
+/** 
+ *
+ * Sets the identifier
+ *
+ * @param id  the id. 
+ */
+    public void setId(int id) { 
+
         this.id = id;
     }
 
-    public String getName() {
+
+/** 
+ *
+ * Gets the name
+ *
+ * @return the name
+ */
+    public String getName() { 
+
         return name;
     }
 
-    public void setName(String name) {
+
+/** 
+ *
+ * Sets the name
+ *
+ * @param name  the name. 
+ */
+    public void setName(String name) { 
+
         this.name = name;
     }
 
-    public double getPrice() {
+
+/** 
+ *
+ * Gets the price
+ *
+ * @return the price
+ */
+    public double getPrice() { 
+
         return price;
     }
 
-    public void setPrice(double price) {
+
+/** 
+ *
+ * Sets the price
+ *
+ * @param price  the price. 
+ */
+    public void setPrice(double price) { 
+
         this.price = price;
     }
 
-    public int getCalories() {
+
+/** 
+ *
+ * Gets the calories
+ *
+ * @return the calories
+ */
+    public int getCalories() { 
+
         return calories;
     }
 
-    public void setCalories(int calories) {
+
+/** 
+ *
+ * Sets the calories
+ *
+ * @param calories  the calories. 
+ */
+    public void setCalories(int calories) { 
+
         this.calories = calories;
     }
 }

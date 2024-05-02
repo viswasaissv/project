@@ -1,5 +1,9 @@
 package cafe;
 import java.util.ArrayList;
+
+ /**
+ * The class Menu item
+ */ 
 public class MenuItem {
   
     private String itemName;
@@ -13,87 +17,256 @@ public class MenuItem {
     private int itemCalorieCount;
     private ArrayList<String> itemPossibleAllergens;
 
-    public String getItemName() {
+
+/** 
+ *
+ * Gets the item name
+ *
+ * @return the item name
+ */
+    public String getItemName() { 
+
         return itemName;
     }
 
-    public void setItemName(String itemName) {
+
+/** 
+ *
+ * Sets the item name
+ *
+ * @param itemName  the item name. 
+ */
+    public void setItemName(String itemName) { 
+
         this.itemName = itemName;
     }
 
-    public int getItemId() {
+
+/** 
+ *
+ * Gets the item identifier
+ *
+ * @return the item identifier
+ */
+    public int getItemId() { 
+
         return itemId;
     }
 
-    public void setItemId(int itemId) {
+
+/** 
+ *
+ * Sets the item identifier
+ *
+ * @param itemId  the item identifier. 
+ */
+    public void setItemId(int itemId) { 
+
         this.itemId = itemId;
     }
 
-  public int getCalories() {
+
+/** 
+ *
+ * Gets the calories
+ *
+ * @return the calories
+ */
+  public int getCalories() { 
+
       return calories;
   }
 
-  public void setCalories(int calories) {
+
+/** 
+ *
+ * Sets the calories
+ *
+ * @param calories  the calories. 
+ */
+  public void setCalories(int calories) { 
+
       this.calories = calories;
   }
 
-    public double getItemPrice() {
+
+/** 
+ *
+ * Gets the item price
+ *
+ * @return the item price
+ */
+    public double getItemPrice() { 
+
         return itemPrice;
     }
 
-    public void setItemPrice(double itemPrice) {
+
+/** 
+ *
+ * Sets the item price
+ *
+ * @param itemPrice  the item price. 
+ */
+    public void setItemPrice(double itemPrice) { 
+
         this.itemPrice = itemPrice;
     }
 
-    public String getItemDescription() {
+
+/** 
+ *
+ * Gets the item description
+ *
+ * @return the item description
+ */
+    public String getItemDescription() { 
+
         return itemDescription;
     }
 
-    public void setItemDescription(String itemDescription) {
+
+/** 
+ *
+ * Sets the item description
+ *
+ * @param itemDescription  the item description. 
+ */
+    public void setItemDescription(String itemDescription) { 
+
         this.itemDescription = itemDescription;
     }
 
-    public String getItemCategory() {
+
+/** 
+ *
+ * Gets the item category
+ *
+ * @return the item category
+ */
+    public String getItemCategory() { 
+
         return itemCategory;
     }
 
-    public void setItemCategory(String itemCategory) {
+
+/** 
+ *
+ * Sets the item category
+ *
+ * @param itemCategory  the item category. 
+ */
+    public void setItemCategory(String itemCategory) { 
+
         this.itemCategory = itemCategory;
     }
 
-    public ArrayList<Food> getFoodItems() {
+
+/** 
+ *
+ * Gets the food items
+ *
+ * @return the food items
+ */
+    public ArrayList<Food> getFoodItems() { 
+
         return foodItems;
     }
 
-    public void setFoodItems(ArrayList<Food> foodItems) {
+
+/** 
+ *
+ * Sets the food items
+ *
+ * @param foodItems  the food items. 
+ */
+    public void setFoodItems(ArrayList<Food> foodItems) { 
+
         this.foodItems = foodItems;
     }
 
-    public ArrayList<Drink> getDrinkItems() {
+
+/** 
+ *
+ * Gets the drink items
+ *
+ * @return the drink items
+ */
+    public ArrayList<Drink> getDrinkItems() { 
+
         return drinkItems;
     }
 
-    public void setDrinkItems(ArrayList<Drink> drinkItems) {
+
+/** 
+ *
+ * Sets the drink items
+ *
+ * @param drinkItems  the drink items. 
+ */
+    public void setDrinkItems(ArrayList<Drink> drinkItems) { 
+
         this.drinkItems = drinkItems;
     }
 
-    public int getItemCalorieCount() {
+
+/** 
+ *
+ * Gets the item calorie count
+ *
+ * @return the item calorie count
+ */
+    public int getItemCalorieCount() { 
+
         return itemCalorieCount;
     }
 
-    public void setItemCalorieCount(int itemCalorieCount) {
+
+/** 
+ *
+ * Sets the item calorie count
+ *
+ * @param itemCalorieCount  the item calorie count. 
+ */
+    public void setItemCalorieCount(int itemCalorieCount) { 
+
         this.itemCalorieCount = itemCalorieCount;
     }
 
-    public ArrayList<String> getItemPossibleAllergens() {
+
+/** 
+ *
+ * Gets the item possible allergens
+ *
+ * @return the item possible allergens
+ */
+    public ArrayList<String> getItemPossibleAllergens() { 
+
         return itemPossibleAllergens;
     }
 
-    public void setItemPossibleAllergens(ArrayList<String> itemPossibleAllergens) {
+
+/** 
+ *
+ * Sets the item possible allergens
+ *
+ * @param itemPossibleAllergens  the item possible allergens. 
+ */
+    public void setItemPossibleAllergens(ArrayList<String> itemPossibleAllergens) { 
+
         this.itemPossibleAllergens = itemPossibleAllergens;
     }
 
-    public MenuItem(String itemName, double itemPrice) {
+
+/** 
+ *
+ * It is a constructor. 
+ *
+ * @param itemName  the item name. 
+ * @param itemPrice  the item price. 
+ */
+    public MenuItem(String itemName, double itemPrice) { 
+
         this.itemName = itemName;
         this.itemPrice = itemPrice;
     }

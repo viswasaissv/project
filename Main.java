@@ -22,10 +22,22 @@ import cafe.DailySpecials;
 import cafe.Order;
 import cafe.OrderType;
 
+
+ /**
+ * The class Main extends application
+ */ 
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) {
+
+/** 
+ *
+ * Start
+ *
+ * @param primaryStage  the primary stage. 
+ */
+    public void start(Stage primaryStage) { 
+
         Scanner scanner = new Scanner(System.in);
 
         // Create menu items dynamically
@@ -60,7 +72,16 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    private ArrayList<MenuItem> createMenuItems(Scanner scanner) {
+
+/** 
+ *
+ * Create menu items
+ *
+ * @param scanner  the scanner. 
+ * @return ArrayList<MenuItem>
+ */
+    private ArrayList<MenuItem> createMenuItems(Scanner scanner) { 
+
         ArrayList<MenuItem> menuItems = new ArrayList<>();
 
         System.out.println("Enter menu items (name price calories), enter 'done' to finish:");
@@ -84,7 +105,17 @@ public class Main extends Application {
         return menuItems;
     }
 
-    private DailySpecials createDailySpecials(Scanner scanner, ArrayList<MenuItem> menuItems) {
+
+/** 
+ *
+ * Create daily specials
+ *
+ * @param scanner  the scanner. 
+ * @param menuItems  the menu items. 
+ * @return DailySpecials
+ */
+    private DailySpecials createDailySpecials(Scanner scanner, ArrayList<MenuItem> menuItems) { 
+
         Map<String, ArrayList<MenuItem>> specialsMap = new HashMap<>();
 
         System.out.println("Enter daily specials for each day (day name, followed by menu item names), enter 'done' to finish:");
@@ -115,7 +146,17 @@ public class Main extends Application {
         return new DailySpecials(specialsMap);
     }
 
-    private List<Order> createOrders(Scanner scanner, Menu menu) {
+
+/** 
+ *
+ * Create orders
+ *
+ * @param scanner  the scanner. 
+ * @param menu  the menu. 
+ * @return List<Order>
+ */
+    private List<Order> createOrders(Scanner scanner, Menu menu) { 
+
         List<Order> orders = new ArrayList<>();
 
         System.out.println("Enter orders (order details), enter 'done' to finish:");
@@ -151,7 +192,15 @@ public class Main extends Application {
         return orders;
     }
 
-    public static void main(String[] args) {
+
+/** 
+ *
+ * Main
+ *
+ * @param args  the args. 
+ */
+    public static void main(String[] args) { 
+
         launch(args);
     }
 }

@@ -3,6 +3,10 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.time.LocalTime;
+
+ /**
+ * The class Order
+ */ 
 public class Order {
 
     private LocalDateTime orderDateTime;
@@ -16,8 +20,23 @@ public class Order {
    private EnumSet<OrderType> orderType;
 
    // Constructors
-   public Order(Integer orderId, LocalDateTime orderDateTime, String orderDetails, EnumSet<OrderType> orderType,
+
+
+/** 
+ *
+ * It is a constructor. 
+ *
+ * @param orderId  the order identifier. 
+ * @param orderDateTime  the order date time. 
+ * @param orderDetails  the order details. 
+ * @param orderType  the order type. 
+ * @param pickUpDatetime  the pick up datetime. 
+ * @param tableId  the table identifier. 
+ * @param deliveryTimeEstimate  the delivery time estimate. 
+ */
+   public Order(Integer orderId, LocalDateTime orderDateTime, String orderDetails, EnumSet<OrderType> orderType, 
                 LocalDateTime pickUpDatetime, int tableId, LocalTime deliveryTimeEstimate) {
+
        this.orderId = orderId;
        this.orderDateTime = orderDateTime;
        this.orderDetails = orderDetails;
@@ -30,25 +49,65 @@ public class Order {
    }
 
    // Methods
-   public void addMenuItem(MenuItem item) {
+
+/** 
+ *
+ * Add menu item
+ *
+ * @param item  the item. 
+ */
+   public void addMenuItem(MenuItem item) { 
+
        menuItems.add(item);
        numberOfCalories += item.getCalories();
    }
 
-   public void removeMenuItem(MenuItem item) {
+
+/** 
+ *
+ * Remove menu item
+ *
+ * @param item  the item. 
+ */
+   public void removeMenuItem(MenuItem item) { 
+
        menuItems.remove(item);
        numberOfCalories -= item.getCalories();
    }
 
-   public void selectFromMenu(Menu menu) {
+
+/** 
+ *
+ * Select from menu
+ *
+ * @param menu  the menu. 
+ */
+   public void selectFromMenu(Menu menu) { 
+
        // Implement the logic to select menu items
    }
 
-   public void getApprovalQ() {
+
+/** 
+ *
+ * Gets the approval Q
+ *
+ */
+   public void getApprovalQ() { 
+
        // Implement the logic to get approval
    }
 
-   public int countNumberOfCalories(MenuItem item) {
+
+/** 
+ *
+ * Count number of calories
+ *
+ * @param item  the item. 
+ * @return int
+ */
+   public int countNumberOfCalories(MenuItem item) { 
+
        return item.getCalories();
    }
    
